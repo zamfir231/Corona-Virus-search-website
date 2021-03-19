@@ -15,7 +15,7 @@
       crossorigin="anonymous"
     />
 
-    <title>{% block title %}Home{% endblock %}</title>
+    {% block head %}{% endblock %}
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
@@ -59,4 +59,5 @@
       type="text/javascript"
       src="{{ url_for('static', filename='index.js') }}"
     ></script>
+    {% block body %}{% endblock %}
   </body>
