@@ -7,3 +7,7 @@ view = Blueprint('views', __name__)
 @view.route('/')
 def home():
     return render_template('index.html')
+
+@view.route('/coronaVirus')
+def coronaVirus():
+    return render_template('coronaVirus.html')
